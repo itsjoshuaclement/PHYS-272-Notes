@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\title{Electricity and Magnetism - Lecture 12 Notes}
+\author{Joshua Clement}
+\maketitle
+
+\section*{Key Topics}
+\begin{itemize}
+    \item \textbf{Bar Magnets as Sources of Magnetic Field}
+    \item \textbf{Electron Current and Conventional Current}
+    \item \textbf{Biot-Savart Law in a Wire}
+    \item \textbf{Magnetic Field of a Straight Wire}
+    \item \textbf{Magnetic Monopoles and Special Relativity}
+\end{itemize}
+
+\section*{Bar Magnets as Magnetic Dipoles}
+\begin{itemize}
+    \item \textbf{Magnetic Field Direction}: From \textbf{North (N)} to \textbf{South (S)} outside the magnet.
+    \item \textbf{Field Lines}: Similar to electric field lines, they indicate direction and density of the field.
+    \item \textbf{Interactions}:
+    \begin{itemize}
+        \item \textbf{Like Poles} (\(N\) and \(N\), \(S\) and \(S\)): \textbf{Repel}.
+        \item \textbf{Unlike Poles} (\(N\) and \(S\)): \textbf{Attract}.
+    \end{itemize}
+\end{itemize}
+
+\section*{Magnetic Monopoles}
+\begin{itemize}
+    \item No magnetic monopoles have been observed in nature, but their existence is theoretically possible.
+    \item A magnetic monopole would have a single magnetic charge (\(+\) or \(-)), similar to an electric charge.
+\end{itemize}
+
+\section*{Conventional Current and Electron Current}
+\begin{itemize}
+    \item \textbf{Electron Current}: Electrons move from the negative (\(-\)) terminal to the positive (\(+\)) terminal of a battery.
+    \item \textbf{Conventional Current}: Defined as the movement of positive charges, from the positive (\(+\)) terminal to the negative (\(-\)) terminal.
+    \item \textbf{Difference in Convention}:
+    \begin{itemize}
+        \item \textbf{Benjamin Franklin's Assumption}: Current was carried by positive charges, leading to the definition of \textbf{conventional current}.
+        \item Despite being incorrect, conventional current remains a useful model.
+    \end{itemize}
+    \item \textbf{Equation for Conventional Current}
+    \[
+    I = |q|nA \vec{v}
+    \]
+\end{itemize}
+
+\section*{Calculating Electron Current}
+\begin{itemize}
+    \item \textbf{Electron Current} (\(i\)) depends on:
+    \begin{itemize}
+        \item \textbf{Density of Mobile Electrons} in the wire (\(n\)).
+        \item \textbf{Cross-Sectional Area} of the wire (\(A\)).
+        \item \textbf{Drift Velocity} of the electrons (\(v_d\)).
+    \end{itemize}
+    \item \textbf{Equation for Electron Current}:
+    \[
+    i = n A \vec{v} e
+    \]
+    where \(e\) is the charge of an electron.
+\end{itemize}
+
+\section*{Biot-Savart Law}
+\begin{itemize}
+    \item \textbf{Definition}: The Biot-Savart Law gives the magnetic field produced by a small segment of current-carrying wire or a moving point charge.
+    \item \textbf{Point Charge}:
+    \[
+    \vec{B} = \frac{\mu_0}{4\pi} \frac{q \vec{v} \times \hat{r}}{|r|^2}
+    \]
+    where \(q\) is the charge, \(\vec{v}\) is the velocity, \(\hat{r}\) is the unit vector from the charge to the observation point, and \(r\) is the distance between them.
+    \item \textbf{Current Element in a Wire}:
+    \[
+    \Delta\vec{B} = \frac{\mu_0}{4\pi} \frac{I \Delta\vec{l} \times \hat{r}}{|r|^2}
+    \]
+    where \(I\) is the current and \(d\vec{l}\) is a small segment of the wire.
+\end{itemize}
+
+\section*{Magnetic Field of a Straight Wire}
+\begin{itemize}
+    \item \textbf{Goal}: Calculate the magnetic field (\(B\)) at a point in the bisecting plane of the wire.
+    \item \textbf{Method}:
+    \begin{itemize}
+        \item Divide the wire into small segments.
+        \item Apply the Biot-Savart Law to find the field contribution from each segment.
+        \item Integrate over the entire length of the wire.
+    \end{itemize}
+    \item \textbf{Result for a Long Straight Wire}:
+    \[
+    |B_y| = \frac{\mu_0}{4 \pi} \frac{IL}{x \sqrt{x^2 + (\frac{L}{2})^2}}
+    \]
+   This is B of a Long Straight Wire where \(r\) is the perpendicular distance from the wire.
+\[
+\vec{B} = \frac{\mu_0}{4 \pi} \frac{IL}{r \sqrt{r^2 + (\frac{L}{2})^2}} \hat{\theta}
+\]
+B of a Long Straight Wire (Cylindrical Coordinates)
+\[
+\vec{B} = \frac{\mu_0}{4 \pi} \frac{2I}{r} \hat{\theta}
+\]
+CLOSE TO THE WIRE VALID ANYWHERE FOR AN INFINITE WIRE!
+\end{itemize}
+
+\section*{Special Relativity and Magnetic Fields}
+\begin{itemize}
+    \item \textbf{Magnetic Fields Depend on Reference Frame}:
+    \begin{itemize}
+        \item The observation of a magnetic field depends on the relative motion of the observer.
+        \item A moving charge can produce both electric and magnetic fields depending on the frame of reference.
+    \end{itemize}
+    \item \textbf{Connection to Electric Fields}: There is a deep relationship between electric and magnetic fields, as shown by Einstein's special theory of relativity.
+\end{itemize}
+
+
+\end{document}

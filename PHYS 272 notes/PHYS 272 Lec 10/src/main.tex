@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{tikz}
+\begin{document}
+
+\title{Electricity and Magnetism - Lecture 10 Notes}
+\author{Joshua Clement}
+\maketitle
+
+\section*{Potential Due to a Charge Distribution}
+\begin{itemize}
+    \item \textbf{Potential of a Charge Distribution}: Can be calculated by dividing the distribution into small point charges and adding up their contributions.
+    \item \textbf{Method 1}: Divide into point charges and add up contributions:
+    \[
+    V = \frac{1}{4\pi\epsilon_0} \sum_i \frac{q_i}{r_i}
+    \]
+    \item \textbf{Method 2}: Integrate the electric field along a path to find the potential:
+    \[
+    V = -\int_{\infty}^{r} \vec{E} \cdot d\vec{l}
+    \]
+\end{itemize}
+
+\section*{Potential Inside Conductors and Insulators}
+\begin{itemize}
+    \item \textbf{Inside a Conductor}:
+    \begin{itemize}
+        \item \textbf{Equilibrium Condition}: The electric field inside a conductor is zero, meaning the electric potential is constant.
+        \item \textbf{Equipotential Surface}: The entire conductor is at the same electric potential in electrostatic equilibrium.
+    \end{itemize}
+    \item \textbf{Inside an Insulator}:
+    \begin{itemize}
+        \item The electric field inside an insulator is not necessarily zero.
+        \item \textbf{Potential Difference in an Insulator}: Includes contributions from the external field and the induced dipoles within the insulator.
+    \end{itemize}
+\end{itemize}
+
+\section*{Electric Potential of a Uniformly Charged Ring}
+\begin{itemize}
+    \item \textbf{Observation Point Along Axis}:
+    \[
+    V = \frac{1}{4\pi\epsilon_0} \frac{Q}{\sqrt{R^2 + z^2}}
+    \]
+    where \(Q\) is the total charge, \(R\) is the radius of the ring, and \(z\) is the distance from the center of the ring along its axis.
+    \item \textbf{Far-Field Approximation} (\(z \gg R\)): The potential resembles that of a point charge:
+    \[
+    V \approx \frac{1}{4\pi\epsilon_0} \frac{Q}{z}
+    \]
+\end{itemize}
+
+\section*{Electric Potential of a Uniformly Charged Sphere and Shell}
+
+\begin{itemize}
+    \item \textbf{Uniformly Charged Shell}:
+    \begin{itemize}
+        \item \textbf{Outside the Shell} (\(r > R\)):
+        \[
+        V(r) = \frac{1}{4\pi\epsilon_0} \frac{Q}{r}
+        \]
+        \item \textbf{Inside the Shell} (\(r \leq R\)): The potential is constant.
+        \[
+        V(r) = \frac{1}{4\pi\epsilon_0} \frac{Q}{R}
+        \]
+    \end{itemize}
+    \item \textbf{Uniformly Charged Sphere}:
+    \begin{itemize}
+        \item \textbf{Outside the Sphere} (\(r > R\)): Similar to a point charge.
+        \[
+        V(r) = \frac{1}{4\pi\epsilon_0} \frac{Q}{r}
+        \]
+        \item \textbf{Inside the Sphere} (\(r < R\)): The potential varies as:
+        \[
+        V(r) = \frac{1}{4\pi\epsilon_0} \left( \frac{3Q}{2R} - \frac{Q r^2}{2R^3} \right)
+        \]
+    \end{itemize}
+\end{itemize}
+
+\section*{Energy Stored in an Electric Field}
+\begin{itemize}
+    \item \textbf{Energy Density of an Electric Field}:
+    \[
+    \frac{U}{Volume} = \frac{1}{2}\epsilon_0 E^2
+    \]
+    where \(u\) is the energy density, and \(E\) is the magnitude of the electric field.
+    \item \textbf{Total Energy Stored}: For a volume containing an electric field, the total energy is:
+    \[
+    U = \int_{\text{Volume}} u \, dV = \int_{\text{Volume}} \frac{1}{2}\epsilon_0 E^2 \, dV
+    \]
+\end{itemize}
+
+\section*{Dielectric Constant and Insulators}
+\begin{itemize}
+    \item \textbf{Dielectric Constant} (\(K\)): The ratio of the applied electric field to the net electric field inside an insulator.
+    \[
+    K = \frac{E_{\text{applied}}}{E_{\text{net}}}
+    \]
+    \item \textbf{Values for Common Materials}:
+    \begin{itemize}
+        \item \textbf{Vacuum}: \(K = 1\) (by definition)
+        \item \textbf{Air}: \(K = 1.0006\)
+        \item \textbf{Water}: \(K = 80\)
+        \item \textbf{Strontium Titanate}: \(K = 310\)
+    \end{itemize}
+\end{itemize}
+
+\end{document}

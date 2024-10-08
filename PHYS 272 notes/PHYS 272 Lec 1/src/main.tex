@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\begin{document}
+\title{Electricity and Magnetism - Lecture 1 Notes}
+\author{Joshua Clement}
+\maketitle
+
+\section*{Electric Charge}
+\begin{itemize}
+    \item \textbf{Electric charge}: intrinsic characteristic of fundamental particles.
+    \item Types of charge: \textbf{Positive (+)} and \textbf{Negative (-)}.
+    \item \textbf{Electrically Neutral}: Equal amounts of positive and negative charges.
+    \item \textbf{Net Charge}: Imbalance in charge, resulting in a non-zero algebraic sum.
+    \item Charge is \textbf{quantized}.
+    \item SI unit: \textbf{Coulomb (C)}.
+    \item \textbf{Conservation of Charge}: Net charge of a closed system remains constant.
+\end{itemize}
+
+\section*{Coulomb's Law}
+\begin{itemize}
+    \item \textbf{Coulomb Force Law}: Describes the electric force between two point charges.
+    \item Magnitude of electric force \( F_{1,2} \) between charges \( Q_1 \) and \( Q_2 \):
+    \[
+    |\vec{F}_{1,2}|= |\vec{F}_{2,1}| = \frac{1}{4 \pi \epsilon_0} \frac{|Q_1 Q_2|}{r^2}
+    \]
+    \item \textbf{Direction of Electric Force}:
+    \begin{itemize}
+        \item \textbf{Attractive} if charges have opposite signs.
+        \item \textbf{Repulsive} if charges have the same sign.
+        \item Force acts along the line connecting the charges.
+    \end{itemize}
+    \item \textbf{SI Units}:
+    \begin{itemize}
+        \item \textbf{Force}: Newton (N)
+        \item \textbf{Electric Charge}: Coulomb (C)
+    \end{itemize}
+    \item \textbf{Constants}:
+    \begin{itemize}
+        \item Vacuum permittivity: \( \epsilon_0 = 8.85 \times 10^{-12} \, \text{C}^2/\text{N} \cdot \text{m}^2 \)
+        \item \( k = \frac{1}{4 \pi \epsilon_0} = 9 \times 10^9 \, \text{N} \cdot \text{m}^2/\text{C}^2 \)
+    \end{itemize}
+\end{itemize}
+
+\section*{Electric Field}
+\begin{itemize}
+    \item \textbf{Electric Field (E)}: Force per unit charge.
+    \item \textbf{Electric Field of a Point Charge}:
+    \[
+    \vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{q_1}{r^2} \hat{r}
+    \]
+    \item \textbf{Field Direction}:
+    \begin{itemize}
+        \item Points away from \textbf{positive} charges.
+        \item Points towards \textbf{negative} charges.
+    \end{itemize}
+    \item \textbf{Electric Field Representation}:
+    \begin{itemize}
+        \item Lines of electric field start on positive charges and end on negative charges.
+        \item \textbf{Greater density of lines} indicates a \textbf{stronger electric field}.
+        \item Electric field is measured in \textbf{N/C}.
+    \end{itemize}
+\end{itemize}
+
+\section*{Electric Field to Electric Force}
+\[
+\vec{F} = q \vec{E}
+\]
+
+\section*{Magnitude of the Electric Field Example}
+\begin{itemize}
+    \item A particle with charge \( q_1 = 2 \, \text{nC} = 2 \times 10^{-9} \, \text{C} \) is located at the origin.
+    \item Electric field at location \( <-0.2, -0.2, -0.2> \, \text{m} \):
+    \[
+    |r| = \sqrt{(-0.2)^2 + (-0.2)^2 + (-0.2)^2} = 0.35 \, \text{m}
+    \]
+    \[
+    \hat{r} = \frac{<-0.2, -0.2, -0.2>}{0.35} = <-0.57, -0.57, -0.57>
+    \]
+    \[
+    E = \frac{1}{4 \pi \epsilon_0} \frac{q_1}{r^2} = \frac{9 \times 10^9}{0.35^2} \times 2 \times 10^{-9} = 147 \, \text{N/C}
+    \]
+\end{itemize}
+\section*{Electric Field in Vector form}
+\[
+\vec{E}=E\hat{r}=(147\frac{N}{C})<-0.57, -0.57, -0.57>
+\]
+\[
+\vec{E}=<-84, -84, -84>\frac{N}{C}
+\]
+
+\section*{Key Concepts}
+\begin{itemize}
+    \item \textbf{Point Charge}: A charged object whose radius is much smaller than the distance between itself and all other objects of interest. The charge is considered concentrated at a single point.
+    \item \textbf{Electric Field}: A vector field that has a value at every location in space.
+\end{itemize}
+
+\end{document}
