@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Magnetic Fields and Moments Notes}
+\author{Joshua Clement}
+
+\begin{document}
+\maketitle
+
+\section*{Magnetic Field of a Straight Wire}
+\begin{itemize}
+    \item \textbf{Magnetic Field} (\(\vec{B}\)) of a long straight wire:
+    \[
+        \vec{B} = \frac{\mu_0}{4 \pi} \frac{I L}{r \sqrt {r^2 + \frac{L}{2}^2}} \hat{\theta}
+    \]
+    \begin{itemize}
+        \item In \textbf{cylindrical coordinates}, \(\vec{B}\) points along concentric circles around the wire.
+        \item \textbf{Very close to the wire} (\(r \ll L\)), another right-hand rule can be applied to determine direction.
+        \[
+        \vec{B} = \frac{\mu_0}{4 \pi} \frac{2 I}{r} \hat{\theta}
+        \]
+        \item If current changes in the wire, the magnetic field changes at the \textbf{speed of light}.
+        \item \textbf{Biot-Savart Law} is an approximation that does not account for \textbf{retardation} and \textbf{relativistic effects} (\(v \ll c\)).
+    \end{itemize}
+\end{itemize}
+
+\section*{Magnetic Field of a Current Loop}
+\begin{itemize}
+    \item \textbf{Magnetic Field on Axis} of a circular current loop:
+    \begin{itemize}
+        \item \textbf{Biot-Savart Law}:
+        \[
+            \vec{B}_{\text{loop}} = \frac{\mu_0}{4 \pi}  \frac{2 \pi R^2 I}{(z^2 + R^2)^{3/2}} \hat{z}
+        \]
+        This can be writen as: (\(\mu = I(\pi R^2)\))
+        \[
+            \vec{B}_{\text{loop}} = \frac{\mu_0}{4 \pi}  \frac{2 \mu}{(z^2 + R^2)^{3/2}} \hat{z}
+        \]
+        \item \textbf{Far from the loop} (\(z \gg R\) , and \(\mu = IA\)) A being the area of the loop:
+        \[
+        B_{\text{axis}} \approx \frac{\mu_0}{4 \pi} \frac{2 \vec{\mu}}{r^3}
+        \]
+        \[
+        B_{\perp} \approx \frac{-\mu_0}{4 \pi} \frac{\vec{\mu}}{r^3}
+        \]
+        \item \textbf{Magnetic Dipole Moment} (\(\mu\)): Defined as \(\mu = I A\), where \(A\) is the area of the loop.
+        \item Units of magnetic dipole moment: \([A \cdot m^2]\).
+
+    \end{itemize}
+\end{itemize}
+
+\section*{Magnetic Field of Thin and Long Coils (Solenoids)}
+\begin{itemize}
+    \item \textbf{Solenoid}: A coil of wire with \(N\) turns.
+    \begin{itemize}
+        \item \textbf{Magnetic Field Inside} a long solenoid:
+        \[
+        B \approx \mu_0 n I
+        \]
+        where \(n = \frac{N}{L}\) is the loop density.
+        N = number of loops, L = length of solenoid.
+        \item The magnetic field inside is nearly \textbf{uniform} across the solenoid's cross-section (except near ends).
+    \end{itemize}
+\end{itemize}
+
+\section*{Atomic Magnetic Dipole Moments}
+\begin{itemize}
+    \item \textbf{Ferromagnetic Materials}:
+    \begin{itemize}
+        \item Magnetic dipole moments of atoms align below a critical temperature called the \textbf{Curie Temperature}.
+        \item \textbf{Ferromagnet}: Material in which atomic magnetic dipole moments align, leading to a net magnetic field.
+    \end{itemize}
+    \item \textbf{Atomic Magnetic Moments} are primarily due to:
+    \begin{enumerate}
+        \item \textbf{Electron orbitals} (electrons orbiting nucleus).
+        \item \textbf{Electron spin} (electrons spinning on their own axis).
+        \item \textbf{Protons and neutrons} also contribute, but their magnetic moments are smaller than those of electrons.
+    \end{enumerate}
+\end{itemize}
+
+\section*{Permanent Magnets and Domains}
+\begin{itemize}
+    \item \textbf{Magnetic Domains}: Regions in ferromagnetic materials where atomic dipoles are aligned.
+    \begin{itemize}
+        \item Ferromagnetic materials like \textbf{iron, cobalt,} and \textbf{nickel} have permanent magnetic moments.
+        \item \textbf{Heating a ferromagnet} can \textbf{demagnetize} it by disturbing the alignment of magnetic domains.
+    \end{itemize}
+    \item \textbf{Paramagnetic Materials}: Attracted by an external magnetic field (most atoms with incomplete orbitals).
+    \item \textbf{Diamagnetic Materials}: Repelled by an external magnetic field (e.g., water, wood, organic compounds).
+\end{itemize}
+
+\end{document}
